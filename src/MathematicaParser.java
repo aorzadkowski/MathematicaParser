@@ -1,19 +1,7 @@
 import java.util.ArrayList;
 
 public class MathematicaParser {
-	static String[] inputs = {"          E\n1   Surd[x , 3]                         E\n- + ----------- ? Integers && Tan[Surd[x , 3]] > 0 && x >= 0\n2       Pi", "true", 
-							  "                   -Pi + 4 Pi C[1]         Pi + 4 Pi C[1]\nC[1] ? Integers && --------------- <= x <= --------------\n                          2                      2",
-							  "    1 - Sqrt[5]    1 - Sqrt[5]       1 + Sqrt[5]        1 + Sqrt[5]\nx < ----------- || ----------- < x < ----------- || x > -----------\n         2              2                 2                  2",
-							  "1   t\n- + -- ? Integers && t >= -2\n2   Pi",
-							  "    -1 - Sqrt[33]    -1 - Sqrt[33]                      -1 + Sqrt[33]        -1 + Sqrt[33]\nx < ------------- || ------------- < x < -1 || -1 < x < ------------- || x > -------------\n          4                4                                  4                    4"};
-	
-	public static void main(String[] args) {
-		for (String str : inputs) {
-			System.out.println("Original:\n" + str);
-			System.out.println("Processed:\n" + parseToOneLine(str));
-		}
-	}
-	
+
 	public static String parseToOneLine(String in) {
 		String out = "";
 		if (in.contains("\n")) {
